@@ -5,10 +5,10 @@
 //
 
 cc_binary {
-    name: "android.hardware.vibrator-service.a70q",
+    name: "android.hardware.vibrator-service.sm6150",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.vibrator-service.a70q.rc"],
-    vintf_fragments: ["android.hardware.vibrator-service.a70q.xml"],
+    init_rc: ["android.hardware.vibrator-service.sm6150.rc"],
+    vintf_fragments: ["android.hardware.vibrator-service.sm6150.xml"],
     srcs: [
         "Vibrator.cpp",
         "service.cpp",

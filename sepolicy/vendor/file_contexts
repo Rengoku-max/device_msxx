@@ -1,28 +1,3 @@
-# Block devices
-/dev/block/platform/soc/1d84000\.ufshc/by-name/bota          u:object_r:botablk_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/cache         u:object_r:cache_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/config        u:object_r:frp_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/debug         u:object_r:debug_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/dsp           u:object_r:dsp_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/dtbo          u:object_r:boot_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/efs           u:object_r:efs_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/fsc           u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/fsg           u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/hidden        u:object_r:hiddenblk_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/modemst1      u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/modemst2      u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/omr           u:object_r:metadata_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/param         u:object_r:paramblk_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/persistent    u:object_r:frp_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/sec_efs       u:object_r:sec_efs_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/ssd           u:object_r:ssdblk_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/steady        u:object_r:steady_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/userdata      u:object_r:userdata_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta        u:object_r:boot_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/vendor        u:object_r:system_block_device:s0
-
-/dev/block/platform/.+/by-name/(cache|CACHE)?		u:object_r:cache_block_device:s0
-/cache/pdp_bkup(/.*)?		u:object_r:cache_pdp_file:s0
 
 # Binaries
 /(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
@@ -182,18 +157,18 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung                        u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.radio@1\.5-radio-service\.samsung                  u:object_r:hal_radio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung            u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.samsung                        u:object_r:hal_light_default_exec:s0
+
 /(vendor|system/vendor)/bin/hw/android.hardware.sensors-service.samsung-multihal                     u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.1-service\.wahoo                            u:object_r:hal_usb_default_exec:s0
 /(vendor|system/vendor)/bin/hw/nxp\.android\.hardware\.nfc@1\.1-service                              u:object_r:hal_nfc_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-a70q               u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
-/(vendor|system/vendor)/bin/hw/android.hardware.biometrics.fingerprint@2.3-service-samsung.a70q      u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.6-service\.a70q                u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-sm6150               u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.biometrics.fingerprint@2.3-service-samsung      u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.6-service\.sm6150                u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service                     u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.radio\.configsvc@1\.0-service              u:object_r:hal_radio_config_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                       u:object_r:hal_thermal_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti-a70q                             u:object_r:hal_power_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android.hardware.vibrator-service.a70q                                u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti-sm6150                             u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.vibrator-service.sm6150                                u:object_r:hal_vibrator_default_exec:s0
 
 # Rootfs
 /omr(/.*)?    u:object_r:omr_file:s0

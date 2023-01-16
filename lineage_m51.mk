@@ -10,24 +10,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit from a70q device
-$(call inherit-product, device/samsung/a70q/device.mk)
+# Inherit from m51 device
+$(call inherit-product, device/samsung/m51/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_a70q
-PRODUCT_DEVICE := a70q
+PRODUCT_NAME := lineage_m51
+PRODUCT_DEVICE := m51
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A705
+PRODUCT_MODEL := SM-M515F
 PRODUCT_MANUFACTURER := samsung
 
-BUILD_FINGERPRINT := "samsung/a70qxx/a70q:11/RP1A.200720.012/A705FNXXU5DVK6:user/release-keys"
+BUILD_FINGERPRINT := "samsung/m51xx/m51:11/RP1A.200720.012/A705FNXXU5DVK6:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="a70qxx-user 11 RP1A.200720.012 A705FNXXU5DVK6 release-keys" \
-    PRODUCT_NAME="a70q" \
-    TARGET_DEVICE="a70q"
+    PRIVATE_BUILD_DESC="m51xx-user 11 RP1A.200720.012 A705FNXXU5DVK6 release-keys" \
+    PRODUCT_NAME="m51" \
+    TARGET_DEVICE="m51"
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung

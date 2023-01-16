@@ -29,8 +29,8 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS += -Wall -Wextra -Werror
 
-LOCAL_MODULE := android.hardware.power-service-qti-a70q
-LOCAL_INIT_RC := android.hardware.power-service-qti-a70q.rc
+LOCAL_MODULE := android.hardware.power-service-qti-sm6150
+LOCAL_INIT_RC := android.hardware.power-service-qti-sm6150.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 LOCAL_VENDOR_MODULE := true

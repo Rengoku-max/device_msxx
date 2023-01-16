@@ -5,7 +5,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/a70q/a70q-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/m51/m51-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -74,7 +74,7 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.audio.service \
     android.hardware.audio@6.0 \
-    android.hardware.audio@6.0-impl.a70q \
+    android.hardware.audio@6.0-impl.sm6150 \
     android.hardware.audio.effect@6.0 \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.bluetooth.audio-impl \
@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.6-service.a70q \
+    android.hardware.camera.provider@2.6-service.sm6150 \
     android.hardware.camera.provider@2.6.vendor \
     android.hardware.camera.device@3.6.vendor \
     android.frameworks.cameraservice.common@2.0.vendor \
@@ -174,7 +174,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service-samsung.a70q
+    android.hardware.biometrics.fingerprint@2.3-service-samsung
 
 # FM
 # PRODUCT_PACKAGES += \
@@ -193,7 +193,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -237,15 +236,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     libkeymaster4_1support.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service \
-    android.hardware.light@2.0-impl \
-    lights.qcom
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-a70q
+    vendor.lineage.livedisplay@2.0-service.samsung-sm6150
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -315,7 +308,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti-a70q \
+    android.hardware.power-service-qti-sm6150 \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
@@ -347,7 +340,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
-    init.a70q.rc \
+    init.m51.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
@@ -427,7 +420,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.a70q
+    android.hardware.vibrator-service.sm6150
 
 # VNDK
 PRODUCT_COPY_FILES += \
